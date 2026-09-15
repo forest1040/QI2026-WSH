@@ -83,8 +83,21 @@ filled in before the page goes live.**
 | 6 | Map or venue photo | search `map-embed` | Text placeholder box |
 | 7 | Logos | — | Not yet placed |
 
-Still shown as "To be announced" (the `v--tba` spans): hackathon theme, team
-size, capacity, deadline, and fee. Replace them once these are settled.
+All previously unconfirmed details are now settled and live on the page:
+
+| Detail | Value | Where |
+|---|---|---|
+| Hackathon theme | Quantum computing | `#hackathon` info panel |
+| Fee | Free of charge | `#registration` prose + meta |
+| Capacity | 54 participants | `#registration` prose + meta |
+| Deadline | End of November 2026 | `#registration` meta |
+| Hackathon format | Individual competition, 3–6 per table | `#hackathon` prose + panel |
+| Seating | 1 facilitator per table | `#hackathon` panel |
+| Platform | QCoder | `#hackathon` prose + panel, `#registration` |
+| Preparation | QCoder account, laptop, Qiskit | `#hackathon` "Before you come" |
+
+No `v--tba` spans remain in the page. The `.v--tba` utility class is kept in
+`style.css` for any detail that becomes "to be announced" again.
 
 ---
 

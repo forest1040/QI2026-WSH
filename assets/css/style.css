@@ -365,6 +365,12 @@ li + li {
   padding: 0;
 }
 
+/* Reset the global `li + li` prose spacing. Left in place, it offsets every
+   item but the first, so "Overview" sits visibly higher than the rest. */
+.nav__links li {
+  margin: 0;
+}
+
 .nav__links a {
   color: var(--text-muted);
   text-decoration: none;
@@ -423,10 +429,6 @@ li + li {
 
   .nav__links[data-open="true"] {
     display: flex;
-  }
-
-  .nav__links li + li {
-    margin-top: 0;
   }
 
   .nav__links a {
