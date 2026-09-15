@@ -912,6 +912,84 @@ table.schedule tbody tr.is-feature td {
   font-style: italic;
 }
 
+/* --- Preparation checklist ----------------------------------------------- */
+
+.prep {
+  margin-top: 44px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  background: var(--bg-elevated);
+  padding: clamp(22px, 3vw, 32px);
+  box-shadow: var(--shadow-sm);
+}
+
+.prep__title {
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0 20px;
+}
+
+.prep__list {
+  counter-reset: prep;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.prep__list li {
+  position: relative;
+  padding-left: 44px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.prep__list li::before {
+  counter-increment: prep;
+  content: counter(prep);
+  position: absolute;
+  left: 0;
+  top: 0.08em;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prep__list strong {
+  color: var(--primary);
+}
+
+.prep__list p {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+@media (max-width: 640px) {
+  .prep__list li {
+    padding-left: 38px;
+  }
+
+  .prep__list li::before {
+    width: 25px;
+    height: 25px;
+    font-size: 0.76rem;
+  }
+}
+
 /* --- Venue --------------------------------------------------------------- */
 
 .venue-grid {
