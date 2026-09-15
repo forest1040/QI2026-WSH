@@ -1,0 +1,123 @@
+# Quantum Programming with Japanese Quantum Computers
+
+English-language homepage for the international workshop and hackathon held as a
+satellite workshop of **QI2026**.
+
+- **Date:** December 11, 2026 (Friday)
+- **Venue:** WINC Aichi, Nagoya, Aichi, Japan
+- **Hosts:** RIKEN · The University of Osaka
+
+---
+
+## Files
+
+```
+index.html              Main page — all content lives here
+assets/css/style.css    Design tokens and all styling
+assets/js/main.js       Mobile nav, active-section highlight, copyright year
+PLAN.md                 The production plan this site was built from
+```
+
+No build step, no dependencies. Open `index.html` directly, or serve it locally:
+
+```sh
+python3 -m http.server 8000
+# then visit http://localhost:8000
+```
+
+---
+
+## Editing content
+
+Everything a non-developer needs to change is in `index.html`. Sections are
+marked with comments:
+
+| Section | Search for | Notes |
+|---|---|---|
+| Hero | `<section class="hero"` | Title, summary, date/venue/hosts, buttons |
+| Key facts | `<section class="facts"` | The four boxes under the hero |
+| Overview | `id="overview"` | Prose paragraphs |
+| Objectives | `id="objectives"` | Bulleted list |
+| Program | `id="program"` | Schedule table rows |
+| Speakers | `id="speakers"` | Speaker cards |
+| Hackathon | `id="hackathon"` | Prose + "at a glance" panel |
+| Venue | `id="venue"` | Address and access text |
+| Registration | `id="registration"` | Form link and details |
+| Organizers | `id="organizers"` | Hosts and contact |
+
+### Adding a speaker
+
+Replace one of the placeholder cards in `#speakers`. To add a photo, drop the
+image in `assets/img/` and replace the avatar `div` contents:
+
+```html
+<!-- before -->
+<div class="speaker__avatar" aria-hidden="true">?</div>
+
+<!-- after -->
+<div class="speaker__avatar">
+  <img src="assets/img/speaker-name.jpg" alt="">
+</div>
+```
+
+Keep `alt=""` — the speaker's name is already in the adjacent text, so a
+description here would just repeat it for screen-reader users.
+
+To show **more** than two speakers in a group, copy a whole `<article class="speaker">`
+block. The grid reflows automatically.
+
+---
+
+## Before publishing — required placeholders
+
+These are marked in the source with `TODO` comments. **Items 1 and 2 must be
+filled in before the page goes live.**
+
+| # | What | Where | Current value |
+|---|---|---|---|
+| 1 | **Registration form URL** | search `forms.gle` (1 link) | `https://forms.gle/XXXXXXXX` |
+| 2 | **Speaker details** | search `To be announced` | TBA cards ×4 |
+| 3 | Contact e-mail | search `CONTACT_EMAIL` (2 places) | `CONTACT_EMAIL` |
+| 4 | Canonical / OGP URL | search `example.org` (3 places) | `https://example.org/qi2026-wsh/` |
+| 5 | Venue address | search `4-4-38` | Needs official confirmation |
+| 6 | Map or venue photo | search `map-embed` | Text placeholder box |
+| 7 | Logos | — | Not yet placed |
+
+Also unconfirmed and currently shown as "To be announced": hackathon theme, team
+size, prerequisites, what to bring, capacity, deadline, and fee. Replace the
+`v--tba` spans once these are settled.
+
+---
+
+## Deploying to GitHub Pages
+
+1. Push the repository to GitHub.
+2. **Settings → Pages → Source:** *Deploy from a branch*.
+3. Branch `main`, folder `/ (root)` → **Save**.
+
+The site publishes at `https://<account>.github.io/<repo>/`. All paths in the
+site are relative, so it works from a subdirectory without changes.
+
+Remember to set the canonical and OGP URLs (placeholder #4) to the real address
+once it is known — otherwise link previews on social media will point at
+`example.org`.
+
+---
+
+## Design notes
+
+- **Palette:** white ground, deep navy (`#1a2f5a`) headings, blue (`#0b6bcb`)
+  accent. Dark mode follows the operating-system setting automatically via
+  `prefers-color-scheme` — no toggle to maintain.
+- **Type:** serif headings, system sans-serif body. No web fonts are loaded, so
+  the page renders instantly and works offline.
+- **Accessibility:** semantic landmarks, one `h1`, labelled nav and toggle,
+  visible focus rings, `alt` text on all images, skip link, and a
+  `prefers-reduced-motion` guard. Colour pairs target WCAG AA.
+- **Print:** a print stylesheet strips navigation, buttons and background
+  colours, so the page can be printed or saved as a PDF for distribution.
+- **Responsive:** two breakpoints (900px, 640px). The schedule stays a table and
+  the grids collapse to a single column.
+
+All design tokens are CSS custom properties at the top of `style.css` — changing
+the accent colour or the container width is a one-line edit.
