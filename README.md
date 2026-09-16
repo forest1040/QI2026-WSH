@@ -76,11 +76,11 @@ filled in before the page goes live.**
 | # | What | Where | Current value |
 |---|---|---|---|
 | 1 | **Registration form URL** | search `forms.gle` (1 link) | `https://forms.gle/XXXXXXXX` |
-| 2 | **Speaker details** | search `To be announced` | TBA cards ×4 |
+| 2 | **Speaker details** | search `To be announced` | Juha Vartiainen (IQM) confirmed; 3 cards still TBA |
 | 3 | Contact e-mail | search `CONTACT_EMAIL` (2 places) | `CONTACT_EMAIL` |
 | 4 | Canonical / OGP URL | search `example.org` (3 places) | `https://example.org/qi2026-wsh/` |
 | 5 | Venue address | search `4-4-38` | Needs official confirmation |
-| 6 | Map or venue photo | search `map-embed` | Text placeholder box |
+| 6 | Access map image | search `map-embed` | Text box linking to winc-aichi.jp |
 | 7 | Logos | — | Not yet placed |
 
 All previously unconfirmed details are now settled and live on the page:

@@ -819,6 +819,18 @@ table.schedule tbody tr.is-feature td {
   margin: 0 0 2px;
 }
 
+/* A confirmed speaker's name links to their profile page */
+.speaker__name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.speaker__name a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .speaker__affil {
   font-size: 0.88rem;
   color: var(--text-muted);
@@ -1016,6 +1028,18 @@ table.schedule tbody tr.is-feature td {
   margin: 0 0 4px;
 }
 
+/* The venue name links out, but keeps the heading's own colour */
+.venue-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.venue-name a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .venue-address {
   font-style: normal;
   color: var(--text-muted);
@@ -1036,6 +1060,18 @@ table.schedule tbody tr.is-feature td {
   font-size: 0.9rem;
   text-align: center;
   padding: 20px;
+}
+
+/* The map box doubles as a link to the venue's official access page */
+a.map-embed {
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+a.map-embed:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--bg-elevated);
 }
 
 /* --- Registration -------------------------------------------------------- */
