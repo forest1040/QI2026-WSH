@@ -1059,7 +1059,15 @@ table.schedule tbody tr.is-feature td {
   color: var(--text-faint);
   font-size: 0.9rem;
   text-align: center;
-  padding: 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.map-embed__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* The map box doubles as a link to the venue's official access page */
