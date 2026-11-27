@@ -37,7 +37,7 @@
 >
 > Let me briefly walk you through today's schedule.
 > This morning until 12:30, we have two invited talks: a short talk by myself, followed by a 70-minute invited talk by Juha Vartiainen from IQM Quantum Computers. Please note that **there will be no formal Q&A sessions after the morning talks** due to time constraints. We encourage you to chat directly with the speakers during lunch, coffee break, and the evening networking session.
-> Lunch break is from 12:30 to 13:30. At 13:30, we will start our two-hour hands-on Programming Hackathon using QCoder and Qiskit. After a 30-minute coffee break, we will hold the Results Presentation and Commentary from 16:00—including a **live execution of the winning solution on RIKEN's real quantum computer, "Ei."** Finally, from 17:30, we will move to the adjacent room, **Room 1107**, for Networking & Discussion.
+> Lunch break is from 12:30 to 13:30. At 13:30, we will start our two-hour hands-on Programming Hackathon using QCoder and Qiskit. After a 30-minute coffee break, we will hold the Results Presentation and Commentary from 16:00—including a **live execution of the winning solution on RIKEN's real quantum computer, "A."** Finally, from 17:30, we will move to the adjacent room, **Room 1107**, for Networking & Discussion.
 >
 > A few housekeeping notes:
 > - Wi-Fi is available using SSID `[SSID]` and password `[Password]`.
@@ -132,7 +132,7 @@
 > 1. **Format**: This hackathon is an **individual competition**, so everyone submits their own solutions. That said, we strongly encourage you to discuss ideas, help each other out at your table, and ask your facilitators for support—enjoy competing and collaborating together!
 > 2. **Tools & Target**: You will write quantum programs in **Qiskit** targeting a **quantum circuit simulator**, and submit your work through **QCoder**.
 > 3. **Schedule**: From 13:40 to 13:50, we will have 10 minutes for quick introductions and environment checks at each table. Coding begins at **13:50**, and the submission deadline is strictly **15:30**.
-> 4. **Highlight**: During the Results Presentation at 16:00, **the winning solution will be executed live on RIKEN's real quantum computer, "Ei"!** So please give it your best shot.
+> 4. **Highlight**: During the Results Presentation at 16:00, **the winning solution will be executed live on RIKEN's real quantum computer, "A"!** So please give it your best shot.
 >
 > Let me introduce our five facilitators supporting your tables today:
 > - From **QCoder** (2 facilitators): `[Name 1]` and `[Name 2]`, who will also help across tables with any QCoder login or submission issues.
@@ -221,7 +221,7 @@
 > （終了後）シミュレータから実機「叡」まで一気通貫で動く様子をご覧いただきました。最優秀の `[最優秀者名]` さん、そして実機デモを行っていただいた森さん、ありがとうございました！
 
 **【English】**
-> *(Intro)* Now for a special highlight of today's workshop! Toshio Mori will execute the winning quantum program by `[Winner Name]` **live on RIKEN's real superconducting quantum computer, "Ei."** Let's see how the real hardware results compare with the simulator output. Over to you, Toshio!
+> *(Intro)* Now for a special highlight of today's workshop! Toshio Mori will execute the winning quantum program by `[Winner Name]` **live on RIKEN's real superconducting quantum computer, "A."** Let's see how the real hardware results compare with the simulator output. Over to you, Toshio!
 > *(After demo)* It's fantastic to see the winning solution run live on real quantum hardware. Another round of applause for `[Winner Name]` and Toshio!
 
 ### 7-4. 講評・表彰（16:45 – 16:55）
@@ -287,7 +287,7 @@
   - English: `10 minutes left` / `5 minutes left` / `Time is up`
 - **理研実機「叡」のジョブ待ち・接続に数分かかる場合のつなぎ**
   - 日本語：`ただいま実機「叡」の実行キューから結果を待機しております。実機ならではのリアルタイムの挙動ですので、結果が返るまでの間、最優秀者の [氏名] さんに今回の工夫ポイントをひと言伺ってみましょう。`
-  - English: `We are currently waiting for the job to finish in the queue on "Ei"—that's the authentic real-hardware experience! While we wait for the result to come back, let's ask [Winner Name] to share one highlight of their implementation.`
+  - English: `We are currently waiting for the job to finish in the queue on "A"—that's the authentic real-hardware experience! While we wait for the result to come back, let's ask [Winner Name] to share one highlight of their implementation.`
 - **Wi-Fi／提出トラブルが起きた場合の全体案内**
   - 日本語：`もしWi-FiやQCoderの提出でエラーが出た場合は、お近くのファシリテーターまたはQCoderスタッフまで手を挙げてお知らせください。`
   - English: `If you experience any Wi-Fi or QCoder submission issues, please raise your hand and our facilitators or QCoder staff will come right over to assist you.`
