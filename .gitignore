@@ -9,3 +9,6 @@
 
 # Local preview artefacts
 *.log
+
+# Local email drafts
+EMAIL_JUHA.txt
